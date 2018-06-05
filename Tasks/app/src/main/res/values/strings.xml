@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">FirstTask</string>
+    <string name="action_settings">Settings</string>
+    <string name="default_text">Default Text</string>
+    <string name="title_activity_main">MainActivity</string>
+</resources>

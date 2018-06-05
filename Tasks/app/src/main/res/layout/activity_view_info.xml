@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="@dimen/horizontal_padding"
+        tools:context=".ViewInfoActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_marker"
+            android:text="Name:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/name_marker"
+            android:paddingLeft="@dimen/horizontal_padding"
+            android:id="@+id/name"
+            android:text="@string/default_text"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dept_marker"
+            android:layout_below="@id/name_marker"
+            android:text="Department:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_toRightOf="@id/dept_marker"
+            android:id="@+id/dept"
+            android:paddingLeft="@dimen/horizontal_padding"
+            android:text="@string/default_text"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/year_marker"
+            android:layout_below="@id/dept_marker"
+            android:text="Year:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dept"
+            android:layout_toRightOf="@id/year_marker"
+            android:id="@+id/year"
+            android:paddingLeft="@dimen/horizontal_padding"
+            android:text="@string/default_text"/>
+    </RelativeLayout>
+</ScrollView>
