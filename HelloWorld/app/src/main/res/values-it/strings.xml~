@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">HelloWorld</string>
+    <string name="listadapter_row_item_name">Ciao</string>
+</resources>

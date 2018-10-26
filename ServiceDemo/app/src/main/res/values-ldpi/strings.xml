@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ServiceDemo</string>
+    <string name="start_music" translatable="false">Start music</string>
+    <string name="stop_music" translatable="false">Stop music</string>
+    <string name="click_to_choose_file" translatable="false">Click to choose file</string>
+</resources>

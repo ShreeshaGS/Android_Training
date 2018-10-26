@@ -3,29 +3,55 @@ package com.example.shrisha.firsttask;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Paint;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.RecyclerView;
-import android.text.Layout;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class StudentDisplayAdapter extends RecyclerView.Adapter<StudentDisplayAdapter.StudentViewHolder> {
 
-    String TAG = StudentDisplayAdapter.class.getName();
+    String TAG = StudentDisplayAdapter.class.getSimpleName();
     private ArrayList<Student> studentList;
     private Context context;
-    StudentDB studentDB;
+    private StudentDB studentDB;
 
     public StudentDisplayAdapter(Context context, ArrayList<Student> studentList) {
         this.studentList = studentList;
         this.context = context;
-        studentDB = new StudentDB(context, StudentDB.getTableStudents(), null, StudentDB.getDatabaseVersion(), this);
+        studentDB = new StudentDB(context, StudentDB.getTableStudents(), null, StudentDB.getDatabaseVersion());
+
+        RecyclerView.AdapterDataObserver adapterDataObserver = new RecyclerView.AdapterDataObserver() {
+            @Override
+            public void onChanged() {
+                super.onChanged();
+                refreshList();
+            }
+        };
+
+        registerAdapterDataObserver(adapterDataObserver);
+    }
+
+    public StudentDisplayAdapter(Context context, StudentDB studentDB) {
+        this.studentList = studentDB.getStudentList();
+        this.context = context;
+        this.studentDB = studentDB;
+
+        RecyclerView.AdapterDataObserver adapterDataObserver = new RecyclerView.AdapterDataObserver() {
+            @Override
+            public void onChanged() {
+                super.onChanged();
+                refreshList();
+            }
+        };
+
+        registerAdapterDataObserver(adapterDataObserver);
     }
 
     @NonNull
@@ -53,7 +79,8 @@ public class StudentDisplayAdapter extends RecyclerView.Adapter<StudentDisplayAd
     public void refreshList() {
         studentList.clear();
         studentList.addAll(studentDB.getStudentList());
-        notifyDataSetChanged();
+
+        //notifyDataSetChanged();
 
     }
 
@@ -76,7 +103,8 @@ public class StudentDisplayAdapter extends RecyclerView.Adapter<StudentDisplayAd
                         public void onClick(DialogInterface dialog, int which) {
                             Intent intent = new Intent(context, StudentInfoActivity.class);
                             intent.putExtra("ID", studentDB.getIDByStudentInfo(studentName.getText().toString(), department, year));
-                            refreshList();
+                            //refreshList();
+                            notifyDataSetChanged();
                             context.startActivity(intent);
                         }
                     });
@@ -84,9 +112,12 @@ public class StudentDisplayAdapter extends RecyclerView.Adapter<StudentDisplayAd
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             studentDB.delete_student(studentDB.getStudentByID(studentDB.getIDByStudentInfo(studentName.getText().toString(), department, year)));
-                            refreshList();
+                            //refreshList();
+                            notifyDataSetChanged();
+
                         }
                     });
+                    alertDialog.setMessage("Alert dialog message");
                     alertDialog.setTitle("Edit / Delete");
                     alertDialog.show();
                     return true;
@@ -97,13 +128,22 @@ public class StudentDisplayAdapter extends RecyclerView.Adapter<StudentDisplayAd
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(context, ViewInfoActivity.class);
-                    Student student = studentDB.getStudentByID(studentDB.getIDByStudentInfo(studentName.getText().toString(), department, year));
-                    intent.putExtra("Name", student.getName());
+                    /*intent.putExtra("Name", student.getName());
                     intent.putExtra("Department", student.getDept());
-                    intent.putExtra("Year", String.format("%04d", student.getYear()));
+                    intent.putExtra("Year", String.format("%04d", student.getYear()));*/
+                    intent.putExtra("Name", studentName.getText().toString());
+                    intent.putExtra("Department", department);
+                    intent.putExtra("Year", String.format("%04d", year));
                     context.startActivity(intent);
                 }
             });
+        }
+    }
+
+    public void showAllOnLog() {
+        Log.d(TAG, String.format(Locale.getDefault(), "%d", getItemCount()));
+        for(Student student: studentList) {
+            Log.d(TAG, student.toString());
         }
     }
 }

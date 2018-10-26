@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/min_padding"
+    tools:context=".ThirdActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/min_padding"
+        android:text="Sample text"
+        android:layout_marginTop="@dimen/min_padding"
+        android:id="@+id/message_third"/>
+
+    <EditText
+        android:id="@+id/editText_third"
+        android:paddingTop="@dimen/min_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/min_padding"
+        android:clickable="true"
+        android:focusable="true"
+        android:inputType="textAutoComplete" />
+
+    <Button
+        android:id="@+id/button_third"
+        android:paddingTop="@dimen/min_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/min_padding"
+        android:gravity="center"
+        android:text="Return" />
+
+</LinearLayout>

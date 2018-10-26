@@ -9,23 +9,29 @@ import android.database.sqlite.SQLiteConstraintException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.support.design.widget.Snackbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 import static android.icu.text.DateFormat.YEAR;
 
 public class StudentDB extends SQLiteOpenHelper {
+    private String TAG = StudentDB.class.getSimpleName();
+
+    private final String DATABASE_NAME = "Students.db";
 
     private static final int DATABASE_VERSION = 1;
-    private static final String DATABASE_NAME = "Students.db";
     private static final String TABLE_STUDENTS = "students";
-    private static final String COLUMN_ID = "id";
-    private static final String COLUMN_NAME = "name";
-    private static final String COLUMN_DEPT = "dept";
-    private static final String COLUMN_YEAR = "year";
-    private StudentDisplayAdapter listAdapter;
+    private final String COLUMN_ID = "id";
+    private final String COLUMN_NAME = "name";
+    private final String COLUMN_DEPT = "dept";
+    private final String COLUMN_YEAR = "year";
+
+    private SQLiteDatabase sqLiteDatabase;
+
     public static int getDatabaseVersion() {
         return DATABASE_VERSION;
     }
@@ -55,130 +61,113 @@ public class StudentDB extends SQLiteOpenHelper {
         super(context, name, factory, version);
     }
 
-    public StudentDB(Context context, String name, SQLiteDatabase.CursorFactory factory, int version, StudentDisplayAdapter listAdapter) {
-        super(context, name, factory, version);
-        this.listAdapter = listAdapter;
-    }
-
     //Add new row to database
-    public  void add_student(Student student) {
+    public void add_student(Student student) throws SQLiteConstraintException {
         ContentValues contentValues = new ContentValues();
         contentValues.put(COLUMN_NAME, student.getName());
         contentValues.put(COLUMN_DEPT, student.getDept());
         contentValues.put(COLUMN_YEAR, student.getYear());
 
-        SQLiteDatabase sqLiteDatabase = getWritableDatabase();
+        sqLiteDatabase = getWritableDatabase();
 
-        try {
-            sqLiteDatabase.insert(TABLE_STUDENTS, null, contentValues);
-            //listAdapter.refreshList();
-        } catch (SQLiteConstraintException e) {
-            e.printStackTrace();
-        } catch (Exception e) {
-            //e.printStackTrace();
-            throw e;
-        }
+        sqLiteDatabase.insert(TABLE_STUDENTS, null, contentValues);
+
         sqLiteDatabase.close();
     }
 
     //Delete row from database
     public void delete_student(Student student) {
-        SQLiteDatabase sqLiteDatabase = getWritableDatabase();
+        sqLiteDatabase = getWritableDatabase();
         sqLiteDatabase.delete(TABLE_STUDENTS,
                 COLUMN_NAME + " = \"" + student.getName() + "\" and "
                         + COLUMN_DEPT + " = \"" + student.getDept() + "\" and "
-                        + COLUMN_YEAR + " = " +student.getYear(),
+                        + COLUMN_YEAR + " = " + student.getYear(),
                 null);
         sqLiteDatabase.close();
     }
 
-    //Print out databse as a string
-
-    /*public String getDBAsString() {
-        String DBString = "\n";
-
-        SQLiteDatabase db = getReadableDatabase();
-
-        String query = "SELECT * FROM " + TABLE_STUDENTS;
-        Cursor cursor = db.rawQuery(query, null);
-
-        while (cursor.moveToNext()) {
-            DBString +=(cursor.getString(cursor.getColumnIndex(COLUMN_NAME)) + " " +
-                        cursor.getString(cursor.getColumnIndex(COLUMN_DEPT)) + " " +
-                        cursor.getString(cursor.getColumnIndex(COLUMN_YEAR)) + "\n");
-        }
-        cursor.close();
-        db.close();
-
-        return DBString;
-    }*/
-
     //return number of rows in the table
     public long getRowCount() {
-        SQLiteDatabase db = getReadableDatabase();
-        long count = DatabaseUtils.queryNumEntries(db, TABLE_STUDENTS);
-        db.close();
+        sqLiteDatabase = getReadableDatabase();
+        long count = DatabaseUtils.queryNumEntries(sqLiteDatabase, TABLE_STUDENTS);
+        sqLiteDatabase.close();
         return count;
     }
 
     public ArrayList<Student> getStudentList() {
         ArrayList<Student> studentArrayList = new ArrayList<>();
-        SQLiteDatabase db = getReadableDatabase();
-        Cursor cursor = db.rawQuery("SELECT * FROM " + TABLE_STUDENTS + " ORDER BY " + COLUMN_ID, null);
+        sqLiteDatabase = getReadableDatabase();
+        Cursor cursor = sqLiteDatabase.rawQuery("SELECT * FROM " + TABLE_STUDENTS + " ORDER BY " + COLUMN_ID, null);
         while (cursor.moveToNext()) {
             studentArrayList.add(new Student(cursor.getString(cursor.getColumnIndex(COLUMN_NAME)),
                     cursor.getString(cursor.getColumnIndex(COLUMN_DEPT)),
                     cursor.getInt(cursor.getColumnIndex(COLUMN_YEAR))));
         }
         cursor.close();
-        db.close();
+        sqLiteDatabase.close();
         return studentArrayList;
 
     }
 
-    public Student getStudentByID(int position) {
-        SQLiteDatabase db = getReadableDatabase();
-        Cursor cursor = db.rawQuery("SELECT * FROM " + TABLE_STUDENTS + " WHERE " + COLUMN_ID + " = " + position + ";", null);
-
+    public Student getStudentByID(int studentID) {
         Student student = null;
-        if (cursor != null && cursor.getCount() == 1 && cursor.moveToFirst()) {
-            student = new Student(cursor.getString(cursor.getColumnIndex(COLUMN_NAME)),
-                    cursor.getString(cursor.getColumnIndex(COLUMN_DEPT)),
-                    cursor.getInt(cursor.getColumnIndex(COLUMN_YEAR)));
+        if (studentID >= 1) {
+            sqLiteDatabase = getReadableDatabase();
+            Cursor cursor = sqLiteDatabase.rawQuery("SELECT * FROM " + TABLE_STUDENTS + " WHERE " + COLUMN_ID + " = " + studentID + ";", null);
 
+            if (cursor != null && cursor.moveToFirst()) {
+                student = new Student(cursor.getString(cursor.getColumnIndex(COLUMN_NAME)),
+                        cursor.getString(cursor.getColumnIndex(COLUMN_DEPT)),
+                        cursor.getInt(cursor.getColumnIndex(COLUMN_YEAR)));
+
+            }
             cursor.close();
+            sqLiteDatabase.close();
         }
-        db.close();
-        return  student;
+        return student;
     }
 
     public int getIDByStudentInfo(String name, String dept, int year) {
-        SQLiteDatabase db = getReadableDatabase();
+        sqLiteDatabase = getReadableDatabase();
         int studentID = -1;
 
         String queryString = "SELECT " + COLUMN_ID + " FROM " + TABLE_STUDENTS + " WHERE " +
                 COLUMN_NAME + " = \"" + name + "\" AND " +
                 COLUMN_DEPT + " = \"" + dept + "\" AND " +
-                COLUMN_YEAR + " = " + year +  ";";
+                COLUMN_YEAR + " = " + year + ";";
 
-        Cursor cursor = db.rawQuery(queryString, null);
-        if(cursor != null && cursor.getCount() == 1 && cursor.moveToFirst()) {
+        Cursor cursor = sqLiteDatabase.rawQuery(queryString, null);
+        if (cursor != null && cursor.getCount() == 1 && cursor.moveToFirst()) {
             studentID = cursor.getInt(cursor.getColumnIndex(COLUMN_ID));
         }
         cursor.close();
-        db.close();
+        sqLiteDatabase.close();
         return studentID;
     }
 
     public void updateByID(int id, String name, String department, int year) {
-        SQLiteDatabase db = getWritableDatabase();
+        sqLiteDatabase = getWritableDatabase();
         String updateQuery = "UPDATE " + TABLE_STUDENTS +
                 " SET " + COLUMN_NAME + " = \"" + name + "\", " +
-                COLUMN_DEPT + " = \""+ department+"\", " +
+                COLUMN_DEPT + " = \"" + department + "\", " +
                 COLUMN_YEAR + " = " + year +
                 " WHERE " + COLUMN_ID + " = " + id + ";";
-        db.execSQL(updateQuery);
-        //listAdapter.refreshList();
-        db.close();
+        sqLiteDatabase.execSQL(updateQuery);
+        sqLiteDatabase.close();
+    }
+
+    public void showAllOnLog() {
+        sqLiteDatabase = getReadableDatabase();
+        Cursor cursor = sqLiteDatabase.rawQuery("SELECT * FROM " + TABLE_STUDENTS + " ; ", null);
+        while (cursor.moveToNext()) {
+            Log.d(TAG, String.format(Locale.getDefault(),
+                    "%d %s %s %04d",
+                    cursor.getInt(cursor.getColumnIndex(COLUMN_ID)),
+                    cursor.getString(cursor.getColumnIndex(COLUMN_NAME)),
+                    cursor.getString(cursor.getColumnIndex(COLUMN_DEPT)),
+                    cursor.getInt(cursor.getColumnIndex(COLUMN_YEAR))));
+        }
+        cursor.close();
+        sqLiteDatabase.close();
     }
 }

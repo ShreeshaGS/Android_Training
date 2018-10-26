@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import java.util.Locale;
+
 public class StudentInfoActivity extends AppCompatActivity {
     //private String TAG = StudentInfoActivity.class.getName();
     private TextInputEditText name;
@@ -51,7 +53,7 @@ public class StudentInfoActivity extends AppCompatActivity {
 
                 name.setText(student.getName());
                 department.setText(student.getDept());
-                year.setText(String.format("%04d", student.getYear()));
+                year.setText(String.format(Locale.getDefault(), "%04d", student.getYear()));
             }
         }
 
@@ -68,7 +70,7 @@ public class StudentInfoActivity extends AppCompatActivity {
                         } catch (SQLiteConstraintException e) {
                             //e.printStackTrace();
                             Toast.makeText(getApplicationContext(),
-                                    "Error inserting student information: Another student with same name exists. Try editing the student information with that name",
+                                    "Error inserting student information: Another student with same name exists. Try editing the student information with that name or insert student with different name.",
                                     Toast.LENGTH_LONG)
                                 .show();
                         } catch (Exception e) {

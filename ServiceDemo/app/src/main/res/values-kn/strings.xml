@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ಸರ್ವಿಸ್ ಡೆಮೋ</string>
+    <string name="no_file_chosen" >ಯಾವುದೇ ಫೈಲ್ ಆಯ್ಕೆ ಮಾಡಿಲ್ಲ.</string>
+    <string name="start_music" >ಸಂಗೀತ ಪ್ರಾರಂಭಿಸಿ</string>
+    <string name="stop_music" >ಸಂಗೀತವನ್ನು ನಿಲ್ಲಿಸಿ</string>
+    <string name="click_to_choose_file" >ಫೈಲ್ ಆಯ್ಕೆ ಮಾಡಲು ಕ್ಲಿಕ್ ಮಾಡಿ</string>
+</resources>

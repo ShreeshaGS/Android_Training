@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/min_margin"
+    android:layout_marginEnd="@dimen/min_margin"
+    android:orientation="vertical"
+    tools:context=".SecondActivity">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/first_fragment"
+        tools:layout="@layout/first_fragment"
+        class="com.example.shrisha.widgetsdemo.FirstFragment"
+        android:layout_marginTop="@dimen/min_margin">
+
+    </fragment>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/second_fragment"
+        tools:layout="@layout/second_fragment"
+        class="com.example.shrisha.widgetsdemo.SecondFragment"
+        android:layout_marginTop="@dimen/min_margin">
+
+    </fragment>
+
+</LinearLayout>

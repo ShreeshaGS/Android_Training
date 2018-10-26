@@ -34,4 +34,9 @@ public class Student {
         this.dept = dept;
         this.year = year;
     }
+
+    @Override
+    public String toString() {
+        return String.format("%s %s %d", name, dept, year);
+    }
 }

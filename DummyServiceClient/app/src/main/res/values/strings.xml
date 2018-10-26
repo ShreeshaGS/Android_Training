@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DummyServiceClient</string>
+    <string name="input_placeholder">Enter some text</string>
+</resources>
