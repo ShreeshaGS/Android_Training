@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/minimum_spacing">
+
+        <TextView
+            android:id="@+id/contact_name"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textAppearance="@style/Theme.Design.Light"
+            android:layout_marginVertical="@dimen/minimum_spacing"
+            android:textSize="@dimen/text_size"
+        />
+        <TextView
+            android:id="@+id/contact_number"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Platform.ThemeOverlay.AppCompat.Dark"
+            android:layout_width="match_parent"
+            android:layout_marginVertical="@dimen/minimum_spacing"
+            android:textSize="@dimen/text_size"
+        />
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/unit_padding"
+            android:background="@color/colorPrimaryDark"/>-->
+
+        </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">OrientationDemo</string>
+    <string name="text_portrait">Portrait</string>
+    <string name="text_landscape">Landscape</string>
+    <string name="text_upside_down">UpSide-Down</string>
+    <string name="text_seascape">Seascape</string>
+</resources>

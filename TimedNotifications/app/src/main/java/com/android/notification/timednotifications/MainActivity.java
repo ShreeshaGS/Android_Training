@@ -1,8 +1,10 @@
 package com.android.notification.timednotifications;
 
 import android.app.Notification;
+import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.media.RingtoneManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
@@ -14,6 +16,7 @@ import java.util.TimerTask;
 public class MainActivity extends AppCompatActivity {
 
     NotificationManager notificationManager;
+    NotificationChannel notificationChannel;
     Notification.Builder builder;
     Timer timer = null;
     TimerTask timerTask;
@@ -34,6 +37,13 @@ public class MainActivity extends AppCompatActivity {
                 //.setCategory(NotificationCompat.CATEGORY_REMINDER)
                 .setAutoCancel(false)
                 .setSmallIcon(R.mipmap.ic_launcher);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            notificationChannel = new NotificationChannel("myNotifChannel", "Channel for timed notifications", NotificationManager.IMPORTANCE_DEFAULT);
+            notificationChannel.setDescription("NotificationChannel empty description");
+            notificationChannel.setShowBadge(true);
+            notificationManager.createNotificationChannel(notificationChannel);
+            builder.setChannelId("myNotifChannel");
+        }
 
     }
 

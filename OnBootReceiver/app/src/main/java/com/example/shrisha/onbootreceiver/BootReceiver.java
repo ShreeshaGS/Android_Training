@@ -12,7 +12,8 @@ public class BootReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
         // TODO: This method is called when the BroadcastReceiver is receiving
         // an Intent broadcast.
-        if ("android.intent.action.BOOT_COMPLETED".equals(intent.getAction())) {
+        if ("android.intent.action.BOOT_COMPLETED".equals(intent.getAction()) ||
+                "android.intent.action.ACTION_BOOT_COMPLETED".equals(intent.getAction())) {
             Toast toast = Toast.makeText(context, "Application received boot broadcast", Toast.LENGTH_LONG);
             toast.setGravity(Gravity.CENTER, 0, 0);
             toast.show();

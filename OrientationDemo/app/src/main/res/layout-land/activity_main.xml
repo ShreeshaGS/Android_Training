@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <!--<Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/size_text_btn"
+        android:id="@+id/btn_portrait"
+        android:text="@string/text_portrait"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/size_text_btn"
+        android:id="@+id/btn_landscape"
+        android:text="@string/text_landscape"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/size_text_btn"
+        android:id="@+id/btn_upside_down"
+        android:text="@string/text_upside_down"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/size_text_btn"
+        android:id="@+id/btn_seascape"
+        android:text="@string/text_seascape"/>-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_orientation"
+        android:text="Toggle Orientation"
+        android:textSize="@dimen/size_text_btn"/>
+
+</LinearLayout>

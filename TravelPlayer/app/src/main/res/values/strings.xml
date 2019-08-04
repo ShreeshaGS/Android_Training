@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GE Player</string>
+    <string name="menu_action_settings">Settings</string>
+    <string name="menu_action_application_settings">Application Settings</string>
+</resources>

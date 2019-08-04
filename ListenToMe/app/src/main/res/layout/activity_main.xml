@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_constraintVertical_chainStyle="spread_inside"
     >
 <!--
     <android.support.v7.widget.Toolbar
@@ -14,41 +13,57 @@
         android:background="@color/colorPrimary"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar"/>-->
-
-    <TextView
-        android:id="@+id/textView"
+    <!--<TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/default_margin"
-        android:text="Hello World!"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/textView"
-        app:layout_constraintBottom_toTopOf="@id/btn_listener">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/default_margin"
-            android:scrollbars="vertical"/>
-    </ScrollView>
-
+        android:layout_height="match_parent"
+        android:text="Hello world"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/scrollView"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        android:textSize="20sp"/>-->
     <ImageButton
         android:id="@+id/btn_listener"
-        android:layout_width="@dimen/img_dimen_square"
-        android:layout_height="@dimen/img_dimen_square"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
 
         android:layout_margin="@dimen/default_margin"
         android:clickable="true"
         android:contentDescription="@string/mic_content_desctiption"
+        android:focusable="true"
+        android:scaleType="fitCenter"
+        android:src="@android:drawable/presence_audio_busy"
 
-        android:src="@drawable/ic_mic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_margin="@dimen/default_margin"
+
+        android:scrollbars="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_listener">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            android:scrollbars="vertical" />-->
+    </ScrollView>
+
 
 </android.support.constraint.ConstraintLayout>

@@ -12,5 +12,6 @@ public class MainActivity extends Activity {
 
         //sendBroadcast(new Intent("android.intent.action.BOOT_COMPLETED"));
         //finish();
+
     }
 }

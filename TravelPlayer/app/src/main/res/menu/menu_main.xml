@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.globaledge.travelplayer.VideoBrowserActivity">
+
+
+    <item
+        android:id="@+id/action_refresh"
+        android:icon="@android:drawable/ic_popup_sync"
+        android:title="Refresh"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_app_settings"
+        android:icon="@drawable/ic_action_app_settings"
+        android:title="@string/menu_action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_quit"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:title="Quit"
+        app:showAsAction="never" />
+</menu>

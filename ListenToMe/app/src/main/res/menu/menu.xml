@@ -7,6 +7,12 @@
         android:title="@string/app_settings"
         android:icon="@drawable/ic_launcher_background"/>
     <item
+        android:icon="@android:drawable/ic_popup_sync"
+        app:showAsAction="never"
+        android:id="@+id/restart"
+        android:title="@string/restart_application"
+        />
+    <item
         android:id="@+id/quit"
         android:icon="@android:drawable/ic_lock_power_off"
         android:title="@string/exit_from_app"

@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+
+
+    defaultConfig {
+        //applicationId "com.globaledge.exoplayerdemo"
+        applicationId "com.globaledge.geplayer"
+        //applicationId "com.globaledge.geplayerfsl"
+        minSdkVersion 28
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    //implementation 'com.android.support:car:28.0.0-alpha5'
+    //implementation 'androidx.car:car:1.0.0-alpha7'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    //implementation 'com.android.support:appcompat-v7:28.0.0'
+    //implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.google.android.exoplayer:exoplayer:2.9.0'
+}

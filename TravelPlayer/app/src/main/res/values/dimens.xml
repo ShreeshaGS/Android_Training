@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_view_component">10dp</dimen>
+    <dimen name="height_TextView">80dp</dimen>
+    <dimen name="img_height_ImageView">80dp</dimen>
+</resources>

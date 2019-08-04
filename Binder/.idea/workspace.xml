@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c2ef2695-f5ef-4b90-b929-eeaa7cef1fb1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../TimedNotifications/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TravelPlayer/app/src/main/java/com/globaledge/travelplayer/TPMediaPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TravelPlayer/app/src/main/java/com/globaledge/travelplayer/VideoPlayerActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TravelPlayer/app/src/main/res/layout-land-mdpi/activity_video_player.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TravelPlayer/app/src/main/res/layout-land-xxhdpi/activity_video_player.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TravelPlayer/app/src/main/res/layout-mdpi/activity_video_player.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TravelPlayer/app/src/main/res/layout-xxhdpi/activity_video_player.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TravelPlayer/app/src/main/res/layout/activity_video_player.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/caches/build_file_checksums.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/shrisha.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BinderServer/client/build/generated/source/aidl/debug/com/shrisha/common/IMyAidlInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/BinderServer/client/build/generated/source/aidl/debug/com/shrisha/common/IMyAidlInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BinderServer/server/build/generated/source/aidl/debug/com/shrisha/common/IMyAidlInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/BinderServer/server/build/generated/source/aidl/debug/com/shrisha/common/IMyAidlInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerApp/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerApp/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerApp/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerApp/src/androidTest/java/com/example/shrisha/binder/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerApp/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerApp/src/main/aidl/com/example/binder/IMyAidlInterface.aidl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerApp/src/main/java/com/example/shrisha/binder/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerApp/src/main/java/com/example/shrisha/binder/MyService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerApp/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerApp/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerApp/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerApp/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerApp/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerApp/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerApp/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerApp/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerApp/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerApp/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerApp/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerApp/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerApp/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerApp/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerApp/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerApp/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerApp/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerApp/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServerApp/src/test/java/com/example/shrisha/binder/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientapp/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientapp/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientapp/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientapp/src/androidTest/java/com/example/binder/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientapp/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientapp/src/main/aidl/com/example/binder/IMyAidlInterface.aidl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientapp/src/main/java/com/example/binder/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientapp/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientapp/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientapp/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientapp/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientapp/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientapp/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientapp/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientapp/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientapp/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientapp/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientapp/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientapp/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientapp/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientapp/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientapp/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientapp/src/main/res/values-xhdpi/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientapp/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientapp/src/main/res/values/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientapp/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientapp/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientapp/src/test/java/com/example/binder/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ListenToMe/.idea/assetWizardSettings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ListenToMe/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../ListenToMe/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ListenToMe/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ListenToMe/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ListenToMe/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ListenToMe/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ListenToMe/app/src/main/java/com/example/shrisha/listentome/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ListenToMe/app/src/main/java/com/example/shrisha/listentome/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ListenToMe/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ListenToMe/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ListenToMe/app/src/main/res/menu/menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ListenToMe/app/src/main/res/menu/menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ListenToMe/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ListenToMe/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ListenToMe/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ListenToMe/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ListenToMe/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../ListenToMe/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MusicApp/.idea/assetWizardSettings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MusicApp/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../MusicApp/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MusicApp/.idea/dictionaries/shrisha.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MusicApp/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnBootReceiver/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../OnBootReceiver/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnBootReceiver/.idea/dictionaries/shrisha.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnBootReceiver/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OnBootReceiver/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnBootReceiver/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../OnBootReceiver/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnBootReceiver/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OnBootReceiver/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnBootReceiver/app/src/main/java/com/example/shrisha/onbootreceiver/BootReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OnBootReceiver/app/src/main/java/com/example/shrisha/onbootreceiver/BootReceiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OnBootReceiver/app/src/main/java/com/example/shrisha/onbootreceiver/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OnBootReceiver/app/src/main/java/com/example/shrisha/onbootreceiver/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServiceDemo/.idea/assetWizardSettings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServiceDemo/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../ServiceDemo/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServiceDemo/.idea/dictionaries/shrisha.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServiceDemo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ServiceDemo/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServiceDemo/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ServiceDemo/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServiceDemo/app/src/main/java/com/example/shrisha/servicedemo/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ServiceDemo/app/src/main/java/com/example/shrisha/servicedemo/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServiceDemo/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ServiceDemo/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServiceDemo/app/src/main/res/raw/ommahapranadeepam.mp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServiceDemo/app/src/main/res/values-hdpi/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ServiceDemo/app/src/main/res/values-hdpi/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServiceDemo/app/src/main/res/values-hdpi/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ServiceDemo/app/src/main/res/values-hdpi/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServiceDemo/app/src/main/res/values-kn/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ServiceDemo/app/src/main/res/values-kn/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServiceDemo/app/src/main/res/values-ldpi/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ServiceDemo/app/src/main/res/values-ldpi/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServiceDemo/app/src/main/res/values-ldpi/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ServiceDemo/app/src/main/res/values-ldpi/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServiceDemo/app/src/main/res/values-xhdpi/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ServiceDemo/app/src/main/res/values-xhdpi/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServiceDemo/app/src/main/res/values-xhdpi/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ServiceDemo/app/src/main/res/values-xhdpi/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServiceDemo/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ServiceDemo/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ServiceDemo/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ServiceDemo/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tasks/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../Tasks/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tasks/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tasks/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Tasks/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tasks/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tasks/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Tasks/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tasks/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../Tasks/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tasks/app/src/main/java/com/example/shrisha/firsttask/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tasks/app/src/main/java/com/example/shrisha/firsttask/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tasks/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../Tasks/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tasks/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Tasks/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TimedNotifications.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TimedNotifications/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../TimedNotifications/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TimedNotifications/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TimedNotifications/.idea/dictionaries/shrisha.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TimedNotifications/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TimedNotifications/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TimedNotifications/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TimedNotifications/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UIWidgetsDemo/app/src/main/res/menu/settings_menu.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/androidTest/java/com/example/shrisha/sampleapplication/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/example/shrisha/sampleapplication/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/test/java/com/example/shrisha/sampleapplication/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_app1/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../test_app1/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_app1/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../test_app1/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_app1/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../test_app1/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_app1/app/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/../test_app1/app/proguard-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_app1/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../test_app1/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_app1/app/src/main/java/com/example/shrisha/test_app1/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../test_app1/app/src/main/java/com/example/shrisha/test_app1/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_app1/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../test_app1/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_app1/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../test_app1/app/src/main/res/values/strings.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BinderServer/client/build/generated/source/aidl/debug/com/shrisha/common/IMyAidlInterface.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="48" column="32" lean-forward="true" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#2734#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BinderServer/client/src/main/java/com/shrisha/binderclient/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="43" column="39" lean-forward="true" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BinderServer/server/src/main/aidl/com/shrisha/common/IMyAidlInterface.aidl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="11" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BinderServer/server/build/generated/source/aidl/debug/com/shrisha/common/IMyAidlInterface.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-213">
+              <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+              <folding>
+                <element signature="e#0#2734#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BinderServer/server/src/main/java/com/shrisha/binderserver/MyService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-460" />
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/BinderServer/client/build/generated/source/aidl/debug/com/shrisha/common/IMyAidlInterface.java" />
+        <option value="$PROJECT_DIR$/BinderServer/server/build/generated/source/aidl/debug/com/shrisha/common/IMyAidlInterface.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="60" />
+    <option name="y" value="41" />
+    <option name="width" value="1296" />
+    <option name="height" value="707" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Binder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Binder" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="android.project.structure.last.selected" value="SDK Location" />
+    <property name="android.project.structure.proportion" value="0.15" />
+    <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="coverage" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c2ef2695-f5ef-4b90-b929-eeaa7cef1fb1" name="Default Changelist" comment="" />
+      <created>1560950276054</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1560950276054</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="48" y="-4" width="1318" height="772" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" visible="true" />
+      <window_info id="Structure" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="Resources Explorer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Captures" order="0" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="TODO" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Palette&#9;" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/BinderServer/server/build/generated/source/aidl/debug/com/shrisha/common/IMyAidlInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-213">
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#2734#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BinderServer/server/src/main/java/com/shrisha/binderserver/MyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-460" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BinderServer/server/src/main/aidl/com/shrisha/common/IMyAidlInterface.aidl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BinderServer/client/build/generated/source/aidl/debug/com/shrisha/common/IMyAidlInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="48" column="32" lean-forward="true" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#2734#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BinderServer/client/src/main/java/com/shrisha/binderclient/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="43" column="39" lean-forward="true" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
